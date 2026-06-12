@@ -42,3 +42,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.project-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.project {
+    margin-bottom: 40px;
+}
