@@ -1,57 +1,155 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f7fa;
-  color: #222;
-  line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
 }
 
-header {
-  background: #1f2937;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
+.navbar {
+    background: #0f172a;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e40af);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-btn,
+.project a {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero-btn:hover,
+.project a:hover {
+    background: #1d4ed8;
 }
 
 section {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 25px;
-  background: white;
-  border-radius: 10px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 
-h1, h2, h3 {
-  margin-top: 0;
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 25px;
 }
 
 .project {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  background: #fafafa;
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-a {
-  color: #2563eb;
-  font-weight: bold;
-  text-decoration: none;
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
 }
 
-a:hover {
-  text-decoration: underline;
+.project h3 {
+    color: #1e40af;
+    font-size: 24px;
 }
 
 .project-image {
     width: 100%;
-    max-width: 900px;
-    display: block;
-    margin: 0 auto 20px auto;
+    height: 350px;
+    object-fit: contain;
+    background: #f8fafc;
     border-radius: 10px;
     border: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
-.project {
-    margin-bottom: 40px;
+ul {
+    padding-left: 22px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #0f172a;
+    color: white;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .project-image {
+        height: 250px;
+    }
 }
